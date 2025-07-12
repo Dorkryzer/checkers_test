@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+}
+.box{
+    min-width: 10vh;
+    min-height: 10vh;
+}
+
+.box_container{
+    position: absolute;
+    top: 10vh;
+    left: 30%;
+    z-index: -1;
+    margin: 20px auto;
+    height: 80vh;
+    width: 80vh;
+    outline: 5px solid rgb(207, 156, 69);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "00 01 02 03 04 05 06 07"
+        "10 11 12 13 14 15 16 17"
+        "20 21 22 23 24 25 26 27"
+        "30 31 32 33 34 35 36 37"
+        "40 41 42 43 44 45 46 47"
+        "50 51 52 53 54 55 56 57"
+        "60 61 62 63 64 65 66 67"
+        "70 71 72 73 74 75 76 77";
+  
+}
+
+.pieces_container{
+    position: absolute;
+    top: 10vh;
+    left: 10vh;
+    z-index: 0;
+    margin: 20px auto;
+    height: 80vh;
+    width: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.black{
+    background: black;
+    z-index: -1;
+}
+.white{
+    background: rgb(237, 219, 203);
+    z-index: -1;
+}
+
+.buttons_container{
+    width: 50vh;
+    display: flex;
+    justify-content: center;
+    
+    padding: 5px;
+    margin: 20px auto;
+}
+.piece{
+    position: absolute;
+    z-index: 1;
+    margin: 1.5vh 1.5vh ;
+    width: 7vh;
+    height: 7vh;
+    border-radius: 50%; 
+}
+.red_piece{   
+    z-index: 2; 
+    background: red;
+}
+.green_piece{
+    z-index: 2;
+    background: rgb(19, 233, 22);
+}
+.selected{
+    background: purple;
+}
+.highlighted {
+    background-color: yellow; 
+}
+.king{
+    text-align: center;
+    vertical-align: middle;
+}
+.played{
+    z-index: 2;
+}

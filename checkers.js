@@ -637,13 +637,13 @@ for(let i = 0;i<8;i++){
             }
         }  
         //for testing     
-        if(i==4&&j==5){
-            piece.classList.add("red_piece");
-            piece.classList.add("king");
-            piece.innerText = "King"
-            piece.style.gridArea = ""+i+""+j;
-            square.appendChild(piece);
-        }
+        // if(i==4&&j==5){
+        //     piece.classList.add("red_piece");
+        //     piece.classList.add("king");
+        //     piece.innerText = "King"
+        //     piece.style.gridArea = ""+i+""+j;
+        //     square.appendChild(piece);
+        // }
     }
 }  
 const allSquares = document.querySelectorAll(".black");
